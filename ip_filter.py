@@ -6,7 +6,7 @@ Hello network!
 I decided to write this article as a form of contribution of the network developers community.
 
 Introduction
-This article describes how we can filter any IP address in any text or more precisely.
+This article describes how we can filter any IP address in any text or more precisely any string.
 
 Requirements
 -Basic knowledge of networking.
