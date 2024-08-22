@@ -51,6 +51,6 @@ below so you can analyze it in more detail.
 
 I hope this has been informative for you, and I'd like to thank you for reading it.
 
-Reference: Python Regular Expressions
+Reference: https://docs.python.org/3/library/re.html
 
 
