@@ -17,7 +17,7 @@ in different outputs of the network equipments and servers involved. And here is
 just using a simple regular expresion.
 
 NOTE: The configuration used on the example is not a real one. I took the structure 
-of the "show ip interface brief" command output has a representation. 
+of the "show ip interface brief" command output as a representation. 
 
 '''
 
@@ -48,25 +48,18 @@ output:
 '''
 
 '''
-Explanation:
+Code Explanation:
 
 1. First I imported the re module.
-2. Create a variable named "pattern" that contain the regular expression.
+2. Created a variable named "pattern" that contain the regular expression.
 3. Then I storaged the router's output in a variable named data. 
-4. the line "ips = re.findall(pattern, data)" uses the findall function to parse all the recureces
+4. The line "ips = re.findall(pattern, data)" uses the findall function with the "pattern" and "data" as arguments to parse all the recurrences that matches 
+the expression in the data and return a python list of them. 
 
-\b =
+As we can see in the output, it returned python list of strings with all the ip addresses that were shown in the example. If you want to know more about the construccion 
+of the regular expression I leave you the below link to the official Python documentation so you can analyze it in more detail.
 
-(?:A) =
-
-\d =
-
-{m,n} =
-
-{m} =
-
-\ = 
-
+I hope this has been informative for you and I'd like to thank you for reading it.
 '''
 
 '''
