@@ -1,21 +1,20 @@
 '''
-
 Hello network!
 
 Introduction
 This article describes how we can filter any IP address in any text or more precisely any output string.
 
 Requirements
--Basic knowledge of networking.
--Medium knowledge of Python programming league.
--Knowledge of python regular expressions.
+-knowledge of networking.
+-knowledge of Python programming league and regular expression.
 
 Why this article?
 I decided to write this article as a form of contribute the network developers community.
 
 I was working on a project in which I had to develop a DHCP monitoring application using Python.
 In the process I had to make a series of filters to discriminate a large number of IP addresses
-in different outputs of the network and servers involved. And here is how I made it.
+in different outputs of the network equipments and servers involved. And here is how I made it
+just using a simple regular expresion.
 
 NOTE: The configuration used on the example is not a real one. I took the structure 
 of the "show ip interface brief" command output has a representation. 
@@ -49,8 +48,12 @@ output:
 '''
 
 '''
-Explanation
+Explanation:
 
+1. First I imported the re module.
+2. Create a variable named "pattern" that contain the regular expression.
+3. Then I storaged the router's output in a variable named data. 
+4. the line "ips = re.findall(pattern, data)" uses the findall function to parse all the recureces
 
 \b =
 
