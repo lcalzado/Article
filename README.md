@@ -1,4 +1,4 @@
-#IP filter with python
+# IP filter with python
 
 **Introduction**
 This article explains how to filter any IP address from any text or, more precisely, from any output string.
