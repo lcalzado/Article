@@ -1,4 +1,4 @@
-Hello, network!
+IP filter with python
 
 Introduction
 This article explains how to filter any IP address from any text or, more precisely, from any output string.
@@ -8,16 +8,12 @@ Requirements
 •	Knowledge of Python programming and regular expressions.
 
 Why this article?
-I decided to write this article as a way to contribute to the network development community.
-I was working on a project where I had to develop a DHCP monitoring application using Python. 
-In the process, I needed to create a series of filters to extract a large number of IP addresses 
-from different outputs of network equipment and servers. Here's how I achieved that using a simple 
-regular expression.
+I decided to write this article as a way to contribute to the network development community. I was working on a project where I had to develop a DHCP monitoring application using Python. In the process, I needed to create a series of filters to extract a large number of IP addresses from different outputs of network equipment and servers. Here's how I achieved that using a simple regular expression.
 
 Note: The configuration used in the example is not real. I used the structure of the "show ip interface brief" command output as a representation.
 
 Example Script:
-
+...
 import re
 pattern = r'\b(?:\d{1,3}\.){3}\d{1,3}\b'
 
